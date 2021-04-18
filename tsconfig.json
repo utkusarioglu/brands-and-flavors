@@ -12,8 +12,5 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": false
-  },
-  "scripts": {
-    "build": "tsc"
   }
 }
