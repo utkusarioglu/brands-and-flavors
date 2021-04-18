@@ -1,0 +1,25 @@
+name: main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    container:
+      image: docker://node:alpine
+      volumes:
+        - /workspace:/github/workspace
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish
+        run: |
+          yarn install --frozen-lockfile --ignore-scripts
+          yarn build
+          echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >>~/.npmrc
+          yarn publish --ignore-scripts
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
