@@ -114,4 +114,4 @@ while still being able to assign static values to our variables.
 
 This repo packages brands and flavors as a type named `Bnf`; which you can use
 to create your own brands and flavors. But you can also consume the ready-made
-Bnfs listed [here](List.md).
+`Bnf`s listed [here](List.md).
