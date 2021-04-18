@@ -1,6 +1,6 @@
 {
   "name": "brands-and-flavors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Brands and flavors for commonly used data types",
   "main": "lib/index.js",
   "repository": "https://github.com/utkusarioglu/brands-and-flavors.git",
