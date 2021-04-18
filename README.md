@@ -110,7 +110,7 @@ const milliseconds: MillisecondsFlavor = seconds; // error
 Using flavors, we are able to make sure that unrelated primitives do not mix
 while still being able to assign static values to our variables.
 
-### So then what does this repo do?
+### So then, what does this repo do?
 
 This repo packages brands and flavors as a type named `Bnf`; which you can use
 to create your own brands and flavors. But you can also consume the ready-made
